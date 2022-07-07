@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Graphics Design</title>
+   
+  </head>
+  
+  <style>
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex-grow;
+  justify-content: center;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #232427;
+}
+    
+    .container {
+  position: relative;
+  margin-top: 30px;
+  width: 410px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: absolute;
+  width: 410px;
+  height: 300px;
+  left: 0;
+  border: solid 5px blue;
+  
+}
+
+.title {
+  position: absolute;
+  width: 410px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 410px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+  </style>
+  
+  <body>
+    
+        <center>
+    <div class="container">
+  <img src="https://imgkub.com/images/2022/07/07/VID-20220706-WA0001_2_2_2.gif" alt="" />
+ 
+  
+</div>
+    
+    <center>
+    <div class="container">
+  <img src="https://imgkub.com/images/2022/07/07/20220707_104925_0000.png" alt="" />
+ 
+  <div class="overlay"></div>
+  <div class="button"><a href="https://api.whatsapp.com/send/?phone=+918290305619&text=03&source=data='">Contact Us</a></div>
+</div>
+
+
+<div class="container">
+  <img src="https://imgkub.com/images/2022/07/07/20220707_104602_0000.png" alt="" />
+ 
+  <div class="overlay"></div>
+  <div class="button">  <a href="https://api.whatsapp.com/send/?phone=+917084092913&text=03&source=data='">Contact Us</a></div>
+</div>
+
+<div class="container">
+  <img src="https://imgkub.com/images/2022/07/07/20220707_104208_0000.png" alt="" />
+ 
+  <div class="overlay"></div>
+  <div class="button">  <a href="https://api.whatsapp.com/send/?phone=+917084092913&text=03&source=data='">Contact Us</a></div>
+</div>
+
+
+<div class="container">
+  <img src="https://imgkub.com/images/2022/07/07/20220707_104322_0000.png" alt="" />
+ 
+  <div class="overlay"></div>
+  <div class="button">  <a href="https://api.whatsapp.com/send/?phone=+917084092913&text=03&source=data='">Contact Us</a></div>
+</div>
+
+  </body>
+</html>
