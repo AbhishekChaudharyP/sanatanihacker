@@ -1,0 +1,409 @@
+<html>
+
+<style type="text/css" media="all">
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.listing-section, .cart-section {
+  width: 100%;
+  float: left;
+  padding: 1%;
+  border-bottom: 0.01em solid #dddbdb;
+}
+
+.product {
+  float: left;
+  width: 90%;
+  border-radius: 2%;
+  margin: 5%;
+}
+
+.product:hover {
+  box-shadow: 2.5px 2.5px 4.5px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2.5px 2.5px 4.5px 6px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    2.5px 2.5px 4.5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2% 2% 0 0;
+}
+
+.images {
+  height: 15em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 2% 2% 0 0;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.images:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+/* IMAGES */
+#image-1 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsPG8GePemg4A2cDYMdVyDmTYSO0MI9lM9g&usqp=CAU");}
+
+#image-2 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD30oAPqhDAjIs2W7Zx6wCWSnSw52FwpV4JA&usqp=CAU")}
+
+#image-3 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwB3Qp1nHcXr5J9i-ebjH5pmrDvvBO1yEKjg&usqp=CAU")}
+
+#image-4 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuVpfCMqJ_PIpt-6RpKMuT3NyK0xaFnqbdzw&usqp=CAU")}
+
+#image-5 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivgtNjsRb8x1LRa-TnxkxZQmySZo7dtgtqw&usqp=CAU")}
+
+#image-6 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuix58Or3dF4umh3MjcU2xS36qpsn4PCLlLA&usqp=CAU")}
+
+#image-7 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMtoNvdlZZcahk0myKCsP44_EsHMzyCrFB15Rauzv5q2-FSEKEoYqq9-Y&s=10")}
+
+#image-8 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6l9Feiwqmrg3c9TfDi9m28jll2YfJ6uc7A&usqp=CAU")}
+
+#image-9 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBcfq0wkMeRuJ2noAOXjy0r-5WABQbBuyjg&usqp=CAU")}
+
+#image-10 {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZErGlsM2oTFQno3eGOF0AJa4we_dGHg7T-A&usqp=CAU")}
+
+.text-box {
+  width: 100%;
+  float: left;
+  border: 0.01em solid #dddbdb;
+  border-radius: 0 0 2% 2%;
+  padding: 1em;
+}
+
+h2, h3 {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0.2em auto;
+}
+
+.item, .price {
+  clear: left;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  color: Grey;
+}
+
+.description, label, button, input {
+  float: left;
+  clear: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin: 0.2em auto;
+}
+
+input:focus {
+  outline-color: #fdf;
+}
+
+label {
+  width: 60%;
+}
+
+.text-box input {
+  width: 15%;
+  clear: none;
+}
+
+.text-box button {
+  margin-top: 1em;
+}
+
+button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 35px;
+  letter-spacing: 2px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 2px;
+  width: 99%;
+  height: 8%;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+  margin: 2px;
+  margin-left: 0.5%;
+  
+}
+button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+button:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+button:focus { outline:0; }
+
+.table-heading, .table-content {
+  width: 75%;
+  margin: 1% 12.25%;
+  float: left;
+  background-color: #dfd;
+}
+
+.table-heading h2 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
+
+.cart-product {
+  width: 50%;
+  float: left;
+}
+
+.cart-price {
+  width: 15%;
+  float: left;
+}
+
+.cart-quantity {
+  width: 10%;
+  float: left;
+}
+
+.cart-total {
+  width: 25%;
+  float: left;
+}
+
+.cart-image-box {
+  width: 20%;
+  overflow: hidden;
+  border-radius: 2%;
+  float: left;
+  margin: 1%;
+}
+
+.cart-images {
+  height: 7em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+}
+
+.cart-item {
+  width: 20%;
+  float: left;
+  margin: 3.2em 1%;
+  text-align: center;
+}
+
+.cart-description {
+  width: 53%;
+  float: left;
+  margin: 3.2em 1%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+}
+
+.keep-shopping {
+  width: 100%;
+  float: left;
+
+  background-color: #bcd4f1;
+  
+}
+
+
+button2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1.6px;
+  position: relative;
+  background-color: #ffefe9;
+  border: none;
+  padding: 2px;
+  color: #3151bd;
+  text-align: center;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+  margin: 5px;
+  
+}
+
+
+</style>
+<body
+<div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-1"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">टेंट बुकिंग</h2>
+      <h3 class="price">💯</h3>
+      <p class="description">हमारे पास टेंट के सभी सामान उपलब्ध है ।</p>
+      
+<button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-2"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">डीजे बुकिंग</h2>
+      <h3 class="price">💯</h3>
+      <p class="description">हमारे पास छोटा या बड़ा सभी प्रकार के डीजे उपलब्ध है ।</p>
+<button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+</div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-3"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">कैटरिंग बुकिंग</h2>
+      <h3 class="price">💯</h3>
+      <p class="description">हमारे पास शाकाहारी और मांसाहारी दोनो प्रकार के कैटर है और वेटर भी उपलब्ध है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-4"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">गाड़ी बुकिंग</h2>
+      <h3 class="price">💯</h3>
+      <p class="description">हमारे पास कार और बुलेरो और अन्य गाडियां भी उपलब्ध है</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-5"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">ब्यूटी पार्लर बुकिंग</h2>
+      <h3 class="price">💯</h3>
+      <p class="description">हमारे पास दूल्हे या दुल्हन के मेकअप की भी वव्यवस्था है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-6"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">लाइट बुकिंग</h2>
+      <h3 class="price">उ है</h3>
+      <p class="description">हमारे पास सभी प्रकार के लाइट, रोड लाइट, स्वागत बोर्ड, आदि उपलब्ध है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-7"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">बैंड बाजा बुकिंग</h2>
+      <h3 class="price">उपलब्ध है</h3>
+      <p class="description">हमारे पास बैंड -बाजा की भी सुविधा है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  
+  
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-8"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">R.O. Water बुकिंग</h2>
+      <h3 class="price">उपलब्ध है</h3>
+      <p class="description">हमारे पास R.O. के पानी की भी व्यवस्था है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-9"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">फल बुकिंग</h2>
+      <h3 class="price">उपलब्ध है</h3>
+      <p class="description">हमारे पास फलों की भी व्यवस्था है (फल स्टॉल भी है ) ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-10"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">कैमरा बुकिंग</h2>
+      <h3 class="price">उपलब्ध है</h3>
+      <p class="description">हमारे पास सभी प्रकार के कैमरा ( वीडियो कैमरा, DSLR Camera, ड्रोन कैमरा ) उपलब्ध है ।</p>
+      <button onclick="document.location='tel:+917800605011'">अभी बुक करें</button>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="keep-shopping">
+<marquee><button2 onclick="document.location='tel:+917800605011'">हमसे संपर्क करें</button2></marque>
+  </div>
+  
+</div>
+</body>
+</html>
